@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+html{
+    font-size: 20px;
+}
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3vh;
+}
+
+.card{
+    min-width: 20%;
+    max-width: 30%;
+    border: 1px solid black;
+    border-radius: .5rem;
+    box-shadow: 2px 2px 20px 2px black;
+    text-align: center;
+    padding: 1rem;
+}
+
+.card img {
+    max-width: 90%;
+    max-height: 300px;
+}
+
+.card__name{
+    font-weight: 400;
+    font-family: 'Lobster', cursive;
+}
+
+.card__description{
+    font-size: .6rem;
+    font-weight: 700;
+}
+
+.card__price{
+    color: green;
+}
+
+.card__category{
+    background-color: rgb(156, 156, 156);
+    padding: .4rem;
+    border-radius: .2rem;
+    display: inline-flex;
+}
+
+.card__btn{
+    background-color: blue;
+    color: white;
+    padding: .5rem 1rem;
+    width: 90%;
+}
+
+.basket {
+    width: 90%;
+    margin: 3rem auto;
+    padding: 0;
+}
+
+.basket li {
+    list-style-type: disclosure-closed;
+}
